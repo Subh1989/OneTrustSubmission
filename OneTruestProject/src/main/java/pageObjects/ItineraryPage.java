@@ -52,7 +52,9 @@ public class ItineraryPage extends TestPage{
 	
 	private By travellerLoaderMess = By.id("travellerLoaderMess");
 	
-	@FindBy(xpath = "//strong[@id='totalFare']/span[2]")
+	private By ccNumber = By.id("creditCardNumberDisp");
+	
+	@FindBy(id = "totFareCV")
 	private WebElement fare;
 	
 	@FindBy(id = "AdultDobDay1")
@@ -99,9 +101,10 @@ public class ItineraryPage extends TestPage{
 		w.until(ExpectedConditions.invisibilityOfElementLocated(travellerLoaderMess));
 	}
 	
-	public void fareValidation()
+	public void fareValidation() throws InterruptedException
 	{
-		initPageElements();;
+		initPageElements();
+		w.until(ExpectedConditions.visibilityOfElementLocated(ccNumber));
 		String totalFarePayment =  fare.getText();
 		  System.out.println(totalFarePayment);
 		  if(totalFarePayment!=null)
