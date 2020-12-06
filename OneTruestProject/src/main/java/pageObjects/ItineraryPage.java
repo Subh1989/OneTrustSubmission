@@ -31,9 +31,9 @@ public class ItineraryPage extends TestPage{
 	@FindBy(id = "LoginContinueBtn_1")
 	private WebElement loginContinueBtn;
 	
-	By loginLoaderMess = By.id("loginLoaderMess");
+	private By loginLoaderMess = By.id("loginLoaderMess");
 	
-	By adultTitle = By.id("AdultTitle1");
+	private By adultTitle = By.id("AdultTitle1");
 	
 	@FindBy(id = "AdultTitle1")
 	private WebElement title;
@@ -50,7 +50,7 @@ public class ItineraryPage extends TestPage{
 	@FindBy(id = "travellerBtn")
 	private WebElement travellerBtn;
 	
-	By travellerLoaderMess = By.id("travellerLoaderMess");
+	private By travellerLoaderMess = By.id("travellerLoaderMess");
 	
 	@FindBy(xpath = "//strong[@id='totalFare']/span[2]")
 	private WebElement fare;
