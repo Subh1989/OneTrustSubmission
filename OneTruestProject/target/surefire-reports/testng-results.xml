@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="92787" started-at="2020-12-06T05:50:35Z" finished-at="2020-12-06T05:52:08Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="92787" started-at="2020-12-06T05:50:35Z" finished-at="2020-12-06T05:52:08Z">
+      <class name="testCases.TestCase_UI">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:testCases.TestCase_UI@69b0fd6f]" name="launchURL" is-config="true" duration-ms="11020" started-at="2020-12-06T05:50:36Z" finished-at="2020-12-06T05:50:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="validateTestCases(java.lang.String, java.lang.String)[pri:0, instance:testCases.TestCase_UI@69b0fd6f]" name="validateTestCases" duration-ms="75729" started-at="2020-12-06T05:50:47Z" data-provider="getData" finished-at="2020-12-06T05:52:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Delhi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTestCases -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testCases.TestCase_UI@69b0fd6f]" name="endTest" is-config="true" duration-ms="878" started-at="2020-12-06T05:52:02Z" finished-at="2020-12-06T05:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- testCases.TestCase_UI -->
+      <class name="testCases.TestCase_API">
+        <test-method status="PASS" signature="countPostsForSpecificUserId()[pri:1, instance:testCases.TestCase_API@757942a1]" name="countPostsForSpecificUserId" duration-ms="4203" started-at="2020-12-06T05:52:03Z" finished-at="2020-12-06T05:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countPostsForSpecificUserId -->
+        <test-method status="PASS" signature="getPostIdFromComments()[pri:2, instance:testCases.TestCase_API@757942a1]" name="getPostIdFromComments" duration-ms="463" started-at="2020-12-06T05:52:07Z" finished-at="2020-12-06T05:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostIdFromComments -->
+        <test-method status="PASS" signature="countCommentsForSpecificPostId()[pri:3, instance:testCases.TestCase_API@757942a1]" name="countCommentsForSpecificPostId" duration-ms="233" started-at="2020-12-06T05:52:08Z" finished-at="2020-12-06T05:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countCommentsForSpecificPostId -->
+        <test-method status="PASS" signature="getAllUsers()[pri:4, instance:testCases.TestCase_API@757942a1]" name="getAllUsers" duration-ms="197" started-at="2020-12-06T05:52:08Z" finished-at="2020-12-06T05:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- testCases.TestCase_API -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
