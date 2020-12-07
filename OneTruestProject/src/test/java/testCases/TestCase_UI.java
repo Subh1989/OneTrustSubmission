@@ -36,6 +36,7 @@ public class TestCase_UI extends Base{
 		ItineraryPage ip = new ItineraryPage(driver);
 		ip.getEmailDetails();
 		ip.getTravellerDetails();
+		ip.saveTraveller();
 		ip.fareValidation();
 	}
 	
