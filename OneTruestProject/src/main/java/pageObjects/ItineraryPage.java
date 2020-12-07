@@ -87,6 +87,12 @@ public class ItineraryPage extends TestPage{
 		adultFname.sendKeys("Subhankar");
 		adultLname.sendKeys("Nandi");
 		mobileNumber.sendKeys("7665442123");
+		w.until(ExpectedConditions.invisibilityOfElementLocated(travellerLoaderMess));
+	}
+	
+	public void getDOBDetails() throws InterruptedException
+	{
+		initPageElements();
 		Select day = new Select(adultDobDay);
 		day.selectByIndex(4);
 		Select month = new Select(adultDobMonth);
@@ -97,10 +103,14 @@ public class ItineraryPage extends TestPage{
 		Thread.sleep(5000);
 		nationality.sendKeys(Keys.ARROW_DOWN);
 		nationality.sendKeys(Keys.ENTER);
-		travellerBtn.click();
-		w.until(ExpectedConditions.invisibilityOfElementLocated(travellerLoaderMess));
+		
 	}
 	
+	public void saveTraveller()
+	{
+		initPageElements();
+		travellerBtn.click();
+	}
 	public void fareValidation() throws InterruptedException
 	{
 		initPageElements();
